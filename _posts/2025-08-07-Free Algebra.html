@@ -1,0 +1,135 @@
+---
+layout: Blog
+title: Free Algebras
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Free Algebras — Notes</title>
+  <style>
+    :root{font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height:1.6}
+    body{max-width:900px;margin:36px auto;padding:24px;color:#0b1a2b}
+    header{border-bottom:1px solid #e6eef6;padding-bottom:12px;margin-bottom:20px}
+    h1{font-size:1.8rem;margin:0}
+    h2{font-size:1.25rem;margin-top:26px}
+    p, li{font-size:1rem}
+    pre{background:#f6f9fc;padding:12px;border-radius:6px;overflow:auto}
+    code{background:#f3f6f9;padding:2px 6px;border-radius:4px}
+    nav{background:#fbfeff;border:1px solid #e6f0fb;padding:12px;border-radius:8px;margin-bottom:18px}
+    .note{font-size:.95rem;color:#274056}
+    .math{font-family: "Times New Roman", Times, serif}
+    .section{margin-bottom:18px}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Free Algebras — Concise Notes</h1>
+    <p class="note">Based on supplied notes: definitions and basic properties of free monoids and free algebras.</p>
+  </header>
+
+  <nav>
+    <strong>Contents</strong>
+    <ul>
+      <li><a href="#words">1. Words and Free Monoid</a></li>
+      <li><a href="#free-algebra">2. Free Algebra</a></li>
+      <li><a href="#monomials">3. Monomials, Degree, and Homogeneity</a></li>
+      <li><a href="#universal">4. Universal Property</a></li>
+      <li><a href="#evaluation">5. Evaluation</a></li>
+      <li><a href="#domain">6. Domain Property</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="words" class="section">
+      <h2>1. Words and Free Monoid</h2>
+      <p>Let <code>X = {x<sub>i</sub> | i ∈ I}</code> be a nonempty (possibly indexed) set.</p>
+
+      <p><strong>Word over X:</strong> a finite sequence of elements from <code>X</code>, written as
+      <code>x<sub>i1</sub> x<sub>i2</sub> ··· x<sub>im</sub></code>. The empty word is denoted by <code>1</code> and has length 0.</p>
+
+      <p>Define multiplication by juxtaposition:
+      <pre class="math">(x_{i1} ··· x_{im}) · (x_{j1} ··· x_{jn}) := x_{i1} ··· x_{im} x_{j1} ··· x_{jn}.</pre>
+      With this multiplication, the set of all words forms a monoid (identity <code>1</code>), denoted <code>X*</code>, called the <em>free monoid</em> on <code>X</code>.</p>
+
+      <p>Each element <code>w ∈ X*</code> (i.e., a word) can be uniquely written as
+      <pre class="math">w = x_{i1}^{k1} x_{i2}^{k2} ··· x_{ir}^{kr},
+      where x_{ij} ∈ X, k_j ∈ ℕ, and x_{ij} ≠ x_{i(j+1)}.</pre>
+
+      <p><strong>Equality in <code>X*</code>:</strong> Two words <code>w, w'</code> are equal iff they contain the same sequence of symbols in the same order.</p>
+    </section>
+
+    <section id="free-algebra" class="section">
+      <h2>2. Free Algebra</h2>
+      <p>Let <code>F</code> be a field. The <em>free algebra</em> on <code>X</code> over <code>F</code>, denoted <code>F&lt;X&gt;</code>, is the monoid algebra <code>F[X*]</code>.</p>
+
+      <p><strong>Elements:</strong> An element <code>f ∈ F&lt;X&gt;</code> is a finite linear combination of words:
+      <pre class="math">f = \sum_{i=1}^m \lambda_i w_i,
+      with \lambda_i ∈ F, \; w_i ∈ X*.</pre>
+      Two such sums are equal if, after combining like terms (words equal in <code>X*</code>), their coefficients agree.</p>
+
+      <p><strong>Operations:</strong></p>
+      <ul>
+        <li><strong>Addition:</strong> combine like monomials (words).</li>
+        <li><strong>Scalar multiplication:</strong> for <code>λ ∈ F</code>, <code>λ f = \sum λ λ_i w_i</code>.</li>
+        <li><strong>Multiplication:</strong> extend bilinearly via
+          <pre class="math">(λ w)(μ v) = (λ μ) (w v)</pre>
+          where <code>w v</code> denotes concatenation in <code>X*</code>.</li>
+      </ul>
+
+      <p><strong>Algebra axioms:</strong> <code>F&lt;X&gt;</code> is an associative unital algebra over <code>F</code>, satisfying associativity, distributivity, scalar compatibility, and has identity element <code>1 ∈ F&lt;X&gt;</code>.</p>
+    </section>
+
+    <section id="monomials" class="section">
+      <h2>3. Monomials, Degree, and Homogeneity</h2>
+      <p><strong>Monomial:</strong> a nonzero scalar multiple of a word: <code>λ w</code> where <code>λ ∈ F</code>, <code>w ∈ X*</code>.</p>
+
+      <p><strong>Length and Degree:</strong></p>
+      <ul>
+        <li>Length of a word <code>w = x_{i1} ··· x_{im}</code>: <code>ℓ(w) := m</code>, and <code>ℓ(1):=0</code>.</li>
+        <li>Degree of a nonzero polynomial <code>f = \sum λ_i w_i</code>:
+          <pre class="math">deg(f) := max{ ℓ(w_i) | λ_i ≠ 0 }.</pre></li>
+      </ul>
+
+      <p><strong>Homogeneous polynomial:</strong> all monomials in <code>f</code> have the same length (degree).</p>
+
+      <p><strong>Multilinear polynomial:</strong> each indeterminate appears exactly once in each monomial. Formally,
+      <pre class="math">f(x_1, …, x_n) = \sum_{σ ∈ S_n} λ_{σ} x_{σ(1)} ··· x_{σ(n)}, \quad λ_{σ} ∈ F.</pre>
+      </p>
+    </section>
+
+    <section id="universal" class="section">
+      <h2>4. Universal Property</h2>
+      <p>Let <code>A</code> be any unital <code>F</code>-algebra and <code>f : X → A</code> be a function. Then there exists a unique unital algebra homomorphism
+      <pre class="math">\tilde{f} : F&lt;X&gt; → A</pre>
+      such that <code>\tilde{f}(x) = f(x)</code> for all <code>x ∈ X</code>. This universal property makes <code>F&lt;X&gt;</code> the free object in the category of unital <code>F</code>-algebras.</p>
+    </section>
+
+    <section id="evaluation" class="section">
+      <h2>5. Evaluation</h2>
+      <p>Given <code>f(x_1, …, x_n) ∈ F&lt;X&gt;</code> and elements <code>a_1, …, a_n ∈ A</code>, the evaluation
+      <pre class="math">f(a_1, …, a_n)
+      </pre>
+      is obtained by replacing each <code>x_i</code> by <code>a_i</code>, preserving order.</p>
+
+      <p><strong>Example:</strong> If <code>f = x_1^2 x_2 x_1 − x_2 x_3 + 1</code>, then
+      <pre class="math">f(a_1,a_2,a_3) = a_1^2 a_2 a_1 − a_2 a_3 + 1 ∈ A.</pre></p>
+    </section>
+
+    <section id="domain" class="section">
+      <h2>6. Domain Property</h2>
+      <p>The free algebra <code>F&lt;X&gt;</code> is a <em>domain</em>. That is, for any nonzero <code>f,g ∈ F&lt;X&gt;</code>,
+      <pre class="math">deg(f g) = deg(f) + deg(g).</pre>
+      </p>
+    </section>
+
+  </main>
+
+  <footer style="margin-top:28px;border-top:1px solid #eef6fb;padding-top:12px;color:#3b5568">
+    <p>Prepared from provided notes. Feel free to request a PDF export, a printable layout, or LaTeX conversion.</p>
+  </footer>
+</body>
+</html>
