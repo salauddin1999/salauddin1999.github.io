@@ -19,8 +19,10 @@ I aim to explore how these identities can be extended to more general algebraic 
 - **📖 [Books](./books.md)**  
 - **🔬 [Research](./research.md)**
 
+<div style="color: #059669; font-size: 0.9rem; font-weight: normal; margin-top: 1.2rem; margin-bottom:1.2rem; font-style: italic;">
+“In mathematics, as in music and poetry, there exists a profound beauty waiting to be discovered.”
+</div>
 
-> *“In mathematics, as in music and poetry, there exists a profound beauty waiting to be discovered.”*
 ---
 
 ## Beyond Mathematics
@@ -35,4 +37,5 @@ I love learning new things and connecting abstract ideas with real-world underst
 You may download my CV here:
 
 **[Download My CV (PDF)](cv.pdf)**
+
 
