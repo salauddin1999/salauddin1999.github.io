@@ -3,39 +3,62 @@ layout: default
 title: About Me
 ---
 
-# Welcome! 
+# Welcome!
 
-Hello there! I'm **Sk Md Salauddin**, and I'm delighted you've stopped by my corner of the mathematical universe.
+Hello — I am **Sk Md Salauddin**, a PhD Research Scholar at **Aligarh Muslim University (AMU)**, working in the broad area of **Functional Identities in Rings and Algebras**.
 
-## About Me
-I'm currently pursuing my PhD at **Aligarh Muslim University (AMU)**, where I dive deep into the fascinating world of **Functional Identities in Rings and Algebras**. This field continuously amazes me with its elegance and complexity—currently, I'm immersed in **Matej Brešar's** seminal work on the subject, which has been an incredible source of insight and inspiration.
+Currently, I am deeply engaged with the ideas developed in **Matej Brešar’s** works — especially how functional identities interact with algebraic structures and how these identities can be extended to more general non-commutative settings.
 
-## Beyond the Equations
-While mathematics forms the core of my academic pursuits, I believe in embracing life's diverse expressions:
-- 🎵 **Music** - Finding harmony beyond mathematical theorems
-- ✍️ **Poetry** - Exploring the beauty of language and emotion  
-- 💻 **Coding** - Bridging abstract mathematical concepts with practical applications
-- 📚 **Continuous Learning** - Always eager to expand my intellectual horizons
+---
 
-## Explore My World
-I invite you to journey through different aspects of my work and interests:
+## What I do (academically)
 
-- **📝 [Notes](./resources.md)** - Mathematical insights, notes, and academic reflections
-- **📖 [Books](./books.md)** - Current readings and mathematical literature that shapes my perspective  
-- **🔬 [Research](./research.md)** - .....
+My interests include:
 
-## Let's Connect!
-Mathematics is most rewarding when shared with others. Whether you're a fellow researcher, student, or simply someone curious about the beauty of mathematical structures, I'd love to engage in meaningful discussions about functional identities, algebraic structures, or any of my other interests.
+- Functional identities in rings & algebras  
+- Structure theory of rings  
+- identities and polynomial maps  
+- how algebra interacts with geometry / category ideas
 
-Feel free to reach out—great mathematical conversations often lead to breakthrough insights!
+I believe functional identities are not just “technical lemmas” — they encode hidden structural information.  
+This is the line of thinking that drives my research.
 
+---
 
-*"In mathematics, as in music and poetry, there exists a profound beauty waiting to be discovered."*
+## Outside mathematics
 
+I am not just equations and proofs. I also enjoy:
 
-# CV
+- 🎵 **Music** — rhythm and form
+- ✍️ **Poetry** — language as abstraction  
+- 💻 **Programming** — translating ideas into code  
+- 📚 **Learning** — curiosity is my constant state
 
-You can also download my CV directly from this site:
+---
 
-[Download My CV](cv.pdf)
+## Explore
+
+- **📝 [Notes](./resources.md)** — my mathematical notes, summaries & personal explanations  
+- **📖 [Books](./books.md)** — books that shaped my thinking  
+- **🔬 [Research](./research.md)** — problems I am reading, writing & thinking about  
+
+---
+
+## Philosophy of my work
+
+I believe mathematics is a language of *structure* — and research is the art of understanding how seemingly unrelated structures fit together.
+
+> *“In mathematics, as in music and poetry, there exists a profound beauty waiting to be discovered.”*
+
+---
+
+## CV
+
+You can download my academic CV here:
+
+👉 **[Download My CV (PDF)](cv.pdf)**
+
+---
+
+If you want to discuss functional identities, algebraic ideas, or just share a mathematical thought — feel free to connect. Some of the most important breakthroughs begin as a simple conversation.
 
