@@ -8,10 +8,6 @@ title: About Me
 I am **Sk Md Salauddin**, a PhD Research Scholar at **Aligarh Muslim University (AMU)**.  
 My research is mainly on **Functional Identities in Rings and Algebras**. At present, I am studying the ideas developed by **Matej Brešar** in this subject.
 
----
-
-## About My Work
-
 I am interested in how functional identities reveal deeper structure inside rings and algebras.  
 I aim to explore how these identities can be extended to more general algebraic frameworks.
 
@@ -23,16 +19,9 @@ I aim to explore how these identities can be extended to more general algebraic 
 “In mathematics, as in music and poetry, there exists a profound beauty waiting to be discovered.”
 </div>
 
----
-
-## Beyond Mathematics
-
 Apart from research, I enjoy **music**, **poetry**, and **programming**.  
 I love learning new things and connecting abstract ideas with real-world understanding.
 
----
-
-## CV
 
 You may download my CV here:
 
