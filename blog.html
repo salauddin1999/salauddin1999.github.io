@@ -1,20 +1,30 @@
 ---
 layout: default
-title: Salauddin's Site
+title: Study Materials
 ---
 
-<h1 style="font-size: 200%; text-align: center;">Blog</h1>
+<h1 style="font-size: 200%; text-align: center;">Study Materials</h1>
 
-<table id="writeuptable">
-    <tr>
-        <td><strong>Date</strong></td>
-        <td><strong>Title</strong></td>
-    </tr>
+<table id="materialtable" style="width: 80%; margin: auto; border-collapse: collapse;">
+  <tr style="background-color: #f2f2f2;">
+    <th style="padding: 10px; text-align: left;">#</th>
+    <th style="padding: 10px; text-align: left;">Title</th>
+    <th style="padding: 10px; text-align: left;">Date</th>
+    <th style="padding: 10px; text-align: left;">Download</th>
+  </tr>
 
-    <!-- Jekyll-generated blog posts -->
-    {% for post in site.posts %}
-        <tr>
-            <td>{{ post.date | date: "%B %e, %Y" }}</td>
-            <td><a href="{{ post.url }}">{{ post.title }}</a></td>
-        </tr>
-    {% endfor %}
+  <tr>
+    <td>1</td>
+    <td>Functional Identities Notes – Part I</td>
+    <td>November 10, 2025</td>
+    <td><a href="/assets/pdfs/functional_identities_part1.pdf" target="_blank">View PDF</a></td>
+  </tr>
+
+  <tr>
+    <td>2</td>
+    <td>Lecture Notes on Rings and Algebras</td>
+    <td>November 12, 2025</td>
+    <td><a href="/assets/pdfs/rings_algebras_notes.pdf" target="_blank">View PDF</a></td>
+  </tr>
+</table>
+---
