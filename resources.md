@@ -24,7 +24,8 @@ Here are some great websites and blogs maintained by mathematicians and educator
 - [John Baez’s Website](https://math.ucr.edu/home/baez/) – Mathematical physics, higher category theory, and more.
 - [Tai-Danae Bradley’s Math3ma](https://www.math3ma.com/) – Accessible posts on linear algebra, quantum mechanics, and information theory.
 - [Keith Conrad's Expository Papers](https://kconrad.math.uconn.edu/blurbs/) – Excellent notes on abstract algebra, number theory, and analysis.
-- [Math-Life Balance youtube channel owner's Website](https://www.muramatik.com/) - If you are interested on Algebraic K-Theory, it will be a good website for you,
+- [Math-Life Balance youtube channel owner's Website](https://www.muramatik.com/) - If you are interested on Algebraic K-Theory, it will be a good website for you.
+- [Mikhail Ershov's Website](https://m-ershov.github.io/Past_teaching/) – Lecture notes in algebra.
 
 ## Youtube Playlist
 {: style="text-align: center;"}
