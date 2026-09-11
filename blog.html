@@ -1,30 +1,35 @@
 ---
 layout: default
-title: Study Materials
+title: Notes & Blog
+description: Expository notes, mathematical writing, and PDF downloads by Sk Md Salauddin.
 ---
 
-<h1 style="font-size: 200%; text-align: center;">Study Materials</h1>
+<h1>Notes &amp; Blog</h1>
+<p>Notes from my studies, with downloadable versions and writing on other subjects.</p>
 
-<table id="materialtable" style="width: 80%; margin: auto; border-collapse: collapse;">
-  <tr style="background-color: #f2f2f2;">
-    <th style="padding: 10px; text-align: left;">#</th>
-    <th style="padding: 10px; text-align: left;">Title</th>
-    <th style="padding: 10px; text-align: left;">Date</th>
-    <th style="padding: 10px; text-align: left;">Download</th>
-  </tr>
+<h2>Mathematical writing</h2>
+<ul class="resource-list">
+  {% for post in site.posts %}
+    {% unless post.ext == '.pdf' %}
+    <li>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+      <p class="meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%B %-d, %Y' }}</time></p>
+      {% if post.description %}<p>{{ post.description | escape }}</p>{% endif %}
+    </li>
+    {% endunless %}
+  {% endfor %}
+</ul>
 
-  <tr>
-    <td>1</td>
-    <td>Functional Identities Notes – Part I</td>
-    <td>November 10, 2025</td>
-    <td><a href="/assets/pdfs/functional_identities_part1.pdf" target="_blank">View PDF</a></td>
-  </tr>
-
-  <tr>
-    <td>2</td>
-    <td>Lecture Notes on Rings and Algebras</td>
-    <td>November 12, 2025</td>
-    <td><a href="/assets/pdfs/rings_algebras_notes.pdf" target="_blank">View PDF</a></td>
-  </tr>
-</table>
----
+<h2>PDF downloads</h2>
+<ul class="resource-list">
+  <li>
+    <h3>Free Algebra</h3>
+    <p>August 7, 2025</p>
+    <a href="{{ '/assets/pdfs/2025-08-07-Free Algebra.pdf' | relative_url | replace: ' ', '%20' }}">Read Free Algebra (PDF)</a>
+  </li>
+  <li>
+    <h3>Scope of Philosophy</h3>
+    <p>August 1, 2025</p>
+    <a href="{{ '/assets/pdfs/2025-08-01-Scope of Philosophy.pdf' | relative_url | replace: ' ', '%20' }}">Read Scope of Philosophy (PDF)</a>
+  </li>
+</ul>

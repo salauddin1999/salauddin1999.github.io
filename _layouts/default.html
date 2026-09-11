@@ -1,37 +1,40 @@
-<html style="scroll-behavior: smooth;">
-    <head>
-        <title>{{ page.title }}</title>
-        <link rel="stylesheet" href="/static/style.css"/>
-        <link rel="stylesheet" href="/static/vim.css"/>
-        <script type="text/javascript" src="/static/script.js"></script>
-        <script type="text/javascript" src="/static/mathjax_macros.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-    </head>
-    <body>
-        <ul class="navbar"> 
-            <li class="navbarleft">
-                <a class="navbara" href="/index.html">Home</a>
-            </li>
-            <li class="navbarleft">
-                <a class="navbara" href="/resources.html">Notes and Resources</a>
-            </li>
-            <li class="navbarleft">
-                <a class="navbara" href="/books.html">Books</a>
-            </li>
-            <li class="navbarleft">
-                <a class="navbara" href="/research.html">Research</a>
-            </li>
-            <li class="navbarright">
-                <a class="navbara" href="/contact.html">Contact</a>
-            </li>
-            <li class="navbarright">
-                <a class="navbara" href="/blog.html">Blog</a>
-            </li>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.url == "/" or page.url == "/index.html" %}{{ site.title | escape }} · Mathematics{% else %}{{ page.title | escape }} · {{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | escape }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/static/vim.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/static/style.css' | relative_url }}">
+  <script defer src="{{ '/static/script.js' | relative_url }}"></script>
+  <script defer src="{{ '/static/mathjax_macros.js' | relative_url }}"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-brand" href="{{ '/' | relative_url }}">Sk Md Salauddin<span>Mathematics · AMU</span></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="{{ '/' | relative_url }}"{% if page.url == "/" or page.url == "/index.html" %} aria-current="page"{% endif %}>Home</a></li>
+          <li><a href="{{ '/research.html' | relative_url }}"{% if page.url == "/research.html" %} aria-current="page"{% endif %}>Research</a></li>
+          <li><a href="{{ '/blog.html' | relative_url }}"{% if page.url == "/blog.html" or page.layout == "blog" %} aria-current="page"{% endif %}>Notes &amp; Blog</a></li>
+          <li><a href="{{ '/resources.html' | relative_url }}"{% if page.url == "/resources.html" %} aria-current="page"{% endif %}>Resources</a></li>
+          <li><a href="{{ '/books.html' | relative_url }}"{% if page.url == "/books.html" %} aria-current="page"{% endif %}>Books</a></li>
+          <li><a href="{{ '/about/' | relative_url }}"{% if page.url == "/about/" %} aria-current="page"{% endif %}>About</a></li>
+          <li><a href="{{ '/contact.html' | relative_url }}"{% if page.url == "/contact.html" %} aria-current="page"{% endif %}>Contact</a></li>
         </ul>
-        <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
-        <br/>
-        {{ content }}
-        {% include footer.html %}
-    </body>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content" class="page-content{% if page.home %} home-content{% endif %}" tabindex="-1">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  <button id="myBtn" type="button" aria-label="Back to top" hidden>↑</button>
+</body>
 </html>
-

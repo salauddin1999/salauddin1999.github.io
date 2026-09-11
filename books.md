@@ -3,16 +3,15 @@ layout: default
 title: My Reading List
 ---
 
-# 📚 My Reading List
-{: style="font-size: 200%; text-align: center;"}
+# My Reading List
 
 These are some of the books that I'm currently reading or have read.
 
 ---
 
-## 🧮 Mathematics
+## Mathematics
 
-### 🔹 Algebra
+### Algebra
 
 - **Marc Lipson & Seymour Lipschutz** – *Schaum's Easy Outline of Linear Algebra*  
   A great choice for beginners. It provides clear introductions to each topic along with numerous examples and solved problems, especially helpful for undergraduates.
@@ -40,7 +39,7 @@ These are some of the books that I'm currently reading or have read.
 
 ---
 
-### 🔸 Analysis
+### Analysis
 
 - **Robert G. Bartle & Donald R. Sherbert** – *Introduction to Real Analysis*
 
@@ -56,7 +55,7 @@ These are some of the books that I'm currently reading or have read.
 
 ---
 
-### 🔹 Topology
+### Topology
 
 - **James R. Munkres** – *Topology*  
   Recommended chapters: at least Chapters 1–4, 9 & 11 for algebraic topology.
@@ -69,14 +68,14 @@ These are some of the books that I'm currently reading or have read.
 
 ---
 
-### 🔸 Number Theory
+### Number Theory
 
 - **David Burton** – *Elementary Number Theory*  
   This is hilarious, but I haven’t really studied number theory much.
 
 ---
 
-## 🧲 Physics
+## Physics
 
 - **Herbert Goldstein** – *Classical Mechanics*
 

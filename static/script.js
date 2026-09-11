@@ -1,13 +1,11 @@
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-  mybutton = document.getElementById("myBtn");
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+"use strict";
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.getElementById("myBtn");
+  if (!button) return;
+  const update = () => { button.hidden = window.scrollY < 400; };
+  window.addEventListener("scroll", update, { passive: true });
+  button.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
+  });
+  update();
+});
