@@ -5,7 +5,7 @@ home: true
 description: Sk Md Salauddin, PhD Research Scholar in Mathematics at Aligarh Muslim University, studying functional identities in rings and algebras.
 ---
 
-<section class="hero">
+<section class="hero hero-with-photo">
   <div>
     <p class="eyebrow">Mathematics · Aligarh Muslim University</p>
     <h1>Sk Md Salauddin</h1>
@@ -16,6 +16,8 @@ description: Sk Md Salauddin, PhD Research Scholar in Mathematics at Aligarh Mus
       <a class="button secondary" href="{{ '/cv.pdf' | relative_url }}">Download CV (PDF)</a>
     </div>
   </div>
+  <div class="hero-profile">
+    <img class="profile-photo" src="{{ '/static/images/salauddin.webp' | relative_url }}" alt="Sk Md Salauddin" width="800" height="1421" fetchpriority="high" decoding="async">
   <aside class="hero-aside" aria-label="Research interests">
     <h2>Research interests</h2>
     <ul>
@@ -24,6 +26,7 @@ description: Sk Md Salauddin, PhD Research Scholar in Mathematics at Aligarh Mus
       <li>Noncommutative algebra</li>
     </ul>
   </aside>
+  </div>
 </section>
 
 <div class="home-grid">
