@@ -2,49 +2,36 @@
 layout: default
 title: Home
 home: true
-description: Sk Md Salauddin, PhD Research Scholar in Mathematics at Aligarh Muslim University, studying functional identities in rings and algebras.
 ---
 
-<section class="hero hero-with-photo">
-  <div>
-    <p class="eyebrow">Mathematics · Aligarh Muslim University</p>
-    <h1>Sk Md Salauddin</h1>
-    <p class="lead">I study functional identities in rings and algebras.</p>
-    <p>I am a PhD Research Scholar at Aligarh Muslim University. My research explores how identities involving maps reveal the structure of noncommutative rings and algebras.</p>
-    <div class="actions">
-      <a class="button" href="{{ '/research.html' | relative_url }}">Explore my research</a>
-      <a class="button secondary" href="{{ '/cv.pdf' | relative_url }}">Download CV (PDF)</a>
-    </div>
-  </div>
-  <div class="hero-profile">
-    <img class="profile-photo" src="{{ '/static/images/salauddin.webp' | relative_url }}" alt="Sk Md Salauddin" width="800" height="1421" fetchpriority="high" decoding="async">
-  <aside class="hero-aside" aria-label="Research interests">
-    <h2>Research interests</h2>
-    <ul>
-      <li>Functional identities</li>
-      <li>Ring theory</li>
-      <li>Noncommutative algebra</li>
-    </ul>
-  </aside>
-  </div>
-</section>
+<section class="home-intro" markdown="1">
 
-<div class="home-grid">
-  <section>
-    <h2>Notes &amp; Blog</h2>
-    <p>Expository writing and downloadable notes from my studies.</p>
-    <a href="{{ '/blog.html' | relative_url }}">Read my notes</a>
-  </section>
-  <section>
-    <h2>Resources</h2>
-    <p>Mathematics websites, lecture courses, and useful learning materials.</p>
-    <a href="{{ '/resources.html' | relative_url }}">Browse resources</a>
-  </section>
-  <section>
-    <h2>Reading list</h2>
-    <p>Books I have read, am studying, or hope to explore.</p>
-    <a href="{{ '/books.html' | relative_url }}">Explore the reading list</a>
-  </section>
+<img class="profile-photo" src="{{ '/static/images/salauddin.webp' | relative_url }}" alt="Sk Md Salauddin">
+
+# Welcome!
+
+I am **Sk Md Salauddin**, a PhD Research Scholar at **Aligarh Muslim University (AMU)**.  
+My research is mainly on **Functional Identities in Rings and Algebras**. At present, I am studying the ideas developed by **Matej Brešar** in this subject.
+
+I am interested in how functional identities reveal deeper structure inside rings and algebras.  
+I aim to explore how these identities can be extended to more general algebraic frameworks.
+
+- **📝 [Notes]({{ '/blog.html' | relative_url }})**  
+- **📖 [Books]({{ '/books.html' | relative_url }})**  
+- **🔬 [Research]({{ '/research.html' | relative_url }})**
+
+<div class="personal-quote">
+“In mathematics, as in music and poetry, there exists a profound beauty waiting to be discovered.”
 </div>
 
-<p class="personal-note">Beyond mathematics, I enjoy music, poetry, and programming. <a href="{{ '/about/' | relative_url }}">More about me</a>.</p>
+Apart from research, I enjoy **music**, **poetry**, and **programming**.  
+I love learning new things and connecting abstract ideas with real-world understanding.
+
+
+You may download my CV here:
+
+**[Download My CV (PDF)](cv.pdf)**
+
+
+
+</section>

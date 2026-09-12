@@ -5,3 +5,9 @@ _site
 .ruby-version
 vendor
 exec_jekyll.sh
+
+# Local dependency settings and LaTeX build output
+.bundle/
+*.aux
+*.log
+*.synctex.gz

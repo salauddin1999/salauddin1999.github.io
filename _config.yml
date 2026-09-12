@@ -9,6 +9,3 @@ github_username: "salauddin1999"
 theme: minima
 markdown: kramdown
 
-collections:
-  writeups:
-    output: true

@@ -1,8 +1,0 @@
----
-layout: default
----
-<article>
-  <h1>{{ page.chal | default: page.title | escape }}</h1>
-  {{ content }}
-  {% if page.flag %}<blockquote><p>Flag: <code>{{ page.flag | escape }}</code></p></blockquote>{% endif %}
-</article>
