@@ -1,27 +1,27 @@
 ---
 layout: default
-title: Contact — Salauddin
+title: Contact
+description: Contact Sk Md Salauddin for research correspondence and mathematical discussions.
 ---
 
 # Contact
 
-If you'd like to get in touch, feel free to reach out through any of the platforms below:
+For research correspondence, questions about my notes, or mathematical discussions, please get in touch.
 
----
+## Email
 
-### 📧 Email  
-**skmds99[at]gmail[dot]com**
+[skmds99@gmail.com](mailto:skmds99@gmail.com)
 
----
+## Affiliation
 
-### 🌐 Online Profiles
+Department of Mathematics  
+Aligarh Muslim University
 
-- **GitHub**: [github.com/salauddin1999](https://github.com/salauddin1999)  
-- **LinkedIn**: [linkedin.com/in/skmds99](https://www.linkedin.com/in/skmds99/)  
-- **Instagram**: [instagram.com/skmds99](https://www.instagram.com/skmds99)  
-- **Facebook**: [facebook.com/skmds99](https://www.facebook.com/skmds99/)  
-- **Telegram**: [@skmds99](https://t.me/skmds99)
+## Professional profiles
 
----
+- [GitHub](https://github.com/salauddin1999)
+- [LinkedIn](https://www.linkedin.com/in/skmds99/)
 
-Feel free to connect or drop a message!
+## Other profiles
+
+[Instagram](https://www.instagram.com/skmds99/) · [Facebook](https://www.facebook.com/skmds99/) · [Telegram](https://t.me/skmds99)
