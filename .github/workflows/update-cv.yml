@@ -1,0 +1,51 @@
+name: Update dated CV
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'cv/**'
+      - '.github/workflows/update-cv.yml'
+  schedule:
+    # 00:47 India time (19:17 UTC the preceding day).
+    - cron: '17 19 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: update-cv
+  cancel-in-progress: false
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      TZ: Asia/Kolkata
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - name: Install LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends latexmk texlive-latex-extra texlive-fonts-recommended
+      - name: Compile CV
+        run: |
+          mkdir -p /tmp/cv-build
+          latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=/tmp/cv-build cv/cv.tex
+          cp /tmp/cv-build/cv.pdf cv.pdf
+      - name: Commit generated PDF
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add cv.pdf
+          if ! git diff --cached --quiet; then
+            git commit -m "Update CV PDF for $(date +%F)"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Request website rebuild
+        # GITHUB_TOKEN commits do not automatically trigger a Pages build.
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"
