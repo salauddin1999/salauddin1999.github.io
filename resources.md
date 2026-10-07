@@ -12,6 +12,7 @@ title: Resources
  - [Here](https://www.dam.brown.edu/people/mumford/blog.html) are some blogs of David Mumford.
  - [Handwritten notes by Brooke Ullery](https://people.math.harvard.edu/~bullery/math131/) on the topology features some gorgeous pictures!
  - Allison N. Miller's thoughtful [piece disability and chronic illness in mathematics](https://blogs.ams.org/inclusionexclusion/2021/08/23/on-disability-and-chronic-illness-in-mathematics/).
+ - [Blog page](https://ysharifi.wordpress.com/) of Yaghoub Sharifi, a researcher interested in noncommutative algebra.
 
 ## Mathematicians’ websites
 Here are some great websites and blogs maintained by mathematicians and educators:
